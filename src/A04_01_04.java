@@ -54,6 +54,28 @@ public class A04_01_04 {
         */
 
         //Aufgabe 9
+        System.out.println("Obergrenze eingeben:");
+        int obergrenze = Integer.parseInt(reader.readLine());
+        int[] zahlen = new int[obergrenze - 1];
+
+        for (int i = 0; i < obergrenze - 1; i++) {
+            zahlen[i] = i + 2;
+        }
+
+        for (int j = 0; j < obergrenze - 1; j++) {
+            for (int z = 2; z < Math.sqrt(obergrenze); z++) {
+                if (zahlen[j] != 0 && zahlen[j] != z) {
+                    if (zahlen[j] % z == 0) {
+                        zahlen[j] = 0;
+                    }
+                }
+            }
+        }
+        System.out.println("Alle Primzahlen bis " + obergrenze + " sind:");
+        for (int o = 0; o < zahlen.length; o++) {
+          if (zahlen[o] != 0)
+            System.out.println(zahlen[o]);
+        }
     }
 }
 //⏺○
