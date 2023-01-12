@@ -8,7 +8,8 @@ public class A04_01_04 {
     public static void main(String[] args) throws IOException {
 
         var reader = new BufferedReader(new InputStreamReader(System.in));
-
+        /*
+        //Aufgabe 7
         String bin = "";
         String bin1 = "";
         String[] led = {"○", "○", "○", "○", "○", "○", "○", "○"};
@@ -30,6 +31,29 @@ public class A04_01_04 {
             }
             System.out.println(i + ": " + Arrays.toString(led));
         }
+    */
+/*
+        //Aufgabe 8
+        int[] counts = new int[6];
+        int roll = 0;
+        for (int i = 0; i < 5000; i++){
+            roll = (int) (Math.random() * 6 + 1);
+            switch (roll) {
+                case 1 : counts[0]++; break;
+                case 2 : counts[1]++; break;
+                case 3 : counts[2]++; break;
+                case 4 : counts[3]++; break;
+                case 5 : counts[4]++; break;
+                case 6 : counts[5]++; break;
+                default : System.out.println("Da stimmt wat nich..."); break;
+            }
+        }
+        for (int j = 0; j < 6; j++){
+            System.out.println("Die " + (j + 1) + " wurde " + counts[j] + " Mal gewürfelt.");
+        }
+        */
 
+        //Aufgabe 9
     }
 }
+//⏺○
